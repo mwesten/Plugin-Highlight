@@ -5,9 +5,13 @@ Statamic plugin that adds [Highlight.js](http://softwaremaniacs.org/soft/highlig
 
 
 # Installation
-## Copy the files to their destination
-Download or clone this project on your system.
-Add the contents of the folder to the `_add-ons/highlight` folder.
+## Clone or Copy the files to their destination
+Clone this project on your system:
+
+    cd webfolder/_add-ons
+    git://github.com/mwesten/Plugin-Highlight.git highlight
+
+Or download the project and add the contents of archive to the `_add-ons/highlight` folder.
 
 ## Add the highlight init code to your head
 Open the theme file layout (for example) `_themes/london-wild/layouts/default.html`
