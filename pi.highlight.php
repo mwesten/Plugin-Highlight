@@ -11,8 +11,8 @@
 
   function __construct() {
   parent::__construct();
-  $this->site_root  = Statamic::get_site_root();
-  $this->theme_root = Statamic::get_templates_path();
+  $this->site_root  = Config::getSiteRoot();
+  $this->theme_root = Config::getTemplatesPath();
 
   $this->plugin_path = $this->getPluginPath();
   }
@@ -25,7 +25,7 @@
   */
   public function head()
   {
-    $name = $this->fetch_param('style', 'default'); // Style name defaults to 'default'
+    $name = $this->fetchParam('style', 'default'); // Style name defaults to 'default'
     // Include the needed CSS for this plugin
     $style = $this->getPluginCss($name);
 
