@@ -10,11 +10,10 @@
   );
 
   function __construct() {
-  parent::__construct();
-  $this->site_root  = Config::getSiteRoot();
-  $this->theme_root = Config::getTemplatesPath();
-
-  $this->plugin_path = $this->getPluginPath();
+    parent::__construct();
+    $this->site_root  = Config::getSiteRoot();
+    $this->theme_root = Config::getTemplatesPath();
+    $this->plugin_path = $this->getPluginPath();
   }
 
 
@@ -58,7 +57,7 @@
   private function getPluginPath() {
     $plugindir = basename(dirname(__FILE__));
     $parentdir = basename(dirname(dirname(__FILE__)));
-    $pluginpath = Statamic_helper::reduce_double_slashes($this->site_root.'/'.$parentdir .'/' . $plugindir."/");
+    $pluginpath = Path::tidy($this->site_root.'/'.$parentdir .'/' . $plugindir."/");
 
     return $pluginpath;
   }
