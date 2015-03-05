@@ -1,8 +1,6 @@
 /*
 
-Pojoaque Style by Jason Tate
-http://web-cms-designs.com/ftopict-10-pojoaque-style-for-highlight-js-code-highlighter.html
-Based on Solarized Style from http://ethanschoonover.com/solarized
+Style with support for rainbow parens
 
 */
 
@@ -10,9 +8,15 @@ Based on Solarized Style from http://ethanschoonover.com/solarized
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  color: #dccf8f;
-  background: url(./pojoaque.jpg) repeat scroll left top #181914;
+  background: #474949;
+  color: #d1d9e1;
   -webkit-text-size-adjust: none;
+}
+
+
+.hljs-body,
+.hljs-collection {
+   color: #d1d9e1;
 }
 
 .hljs-comment,
@@ -20,23 +24,21 @@ Based on Solarized Style from http://ethanschoonover.com/solarized
 .hljs-doctype,
 .lisp .hljs-string,
 .hljs-javadoc {
-  color: #586e75;
+  color: #969896;
   font-style: italic;
 }
 
 .hljs-keyword,
-.css .rule .hljs-keyword,
+.clojure .hljs-attribute,
 .hljs-winutils,
 .javascript .hljs-title,
-.method,
 .hljs-addition,
-.css .hljs-tag,
-.hljs-list .hljs-keyword,
-.nginx .hljs-title {
-  color: #b64926;
+.css .hljs-tag {
+  color: #cc99cc;
 }
 
-.hljs-number,
+.hljs-number { color: #f99157; }
+
 .hljs-command,
 .hljs-string,
 .hljs-tag .hljs-value,
@@ -45,7 +47,7 @@ Based on Solarized Style from http://ethanschoonover.com/solarized
 .tex .hljs-formula,
 .hljs-regexp,
 .hljs-hexcolor {
-  color: #468966;
+  color: #8abeb7;
 }
 
 .hljs-title,
@@ -54,33 +56,32 @@ Based on Solarized Style from http://ethanschoonover.com/solarized
 .hljs-chunk,
 .hljs-decorator,
 .hljs-built_in,
-.hljs-identifier,
-.hljs-id {
-  color: #ffb03b;
+.hljs-identifier {
+  color: #b5bd68;
 }
 
-.hljs-attribute,
+.hljs-class .hljs-keyword {
+  color: #f2777a;
+}
+
 .hljs-variable,
-.lisp .hljs-body,
 .smalltalk .hljs-number,
 .hljs-constant,
 .hljs-class .hljs-title,
 .hljs-parent,
-.hljs-type {
-  color: #b58900;
+.haskell .hljs-label,
+.hljs-id {
+   color: #ffcc66;
 }
 
-.css .hljs-attribute {
-  color: #b89859;
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  font-weight: bold;
 }
 
-.css .hljs-number,
-.css .hljs-hexcolor {
-  color: #dccf8f;
-}
-
-.css .hljs-class {
-  color: #d3a60c;
+.hljs-attribute {
+  color: #81a2be;
 }
 
 .hljs-preprocessor,
@@ -95,7 +96,7 @@ Based on Solarized Style from http://ethanschoonover.com/solarized
 .hljs-important,
 .hljs-subst,
 .hljs-cdata {
-  color: #cb4b16;
+  color: #f99157;
 }
 
 .hljs-deletion {
@@ -103,5 +104,5 @@ Based on Solarized Style from http://ethanschoonover.com/solarized
 }
 
 .tex .hljs-formula {
-  background: #073642;
+  background: #eee8d5;
 }
