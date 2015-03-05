@@ -1,7 +1,7 @@
 Plugin-Highlight
 ================
 
-Statamic plugin that adds [Highlight.js](http://softwaremaniacs.org/soft/highlight/en) v 7.0 code highlighting to your site.
+Statamic plugin that adds [Highlight.js](https://highlightjs.org/) v 8.4 code highlighting to your site.
 
 
 # Installation
@@ -29,7 +29,7 @@ You can also select one of the added themes that you can find in the `_add-ons/h
 
 When codeblocks are used (1 tab or 4 spaces) Highlight.js tries to guess what code is used. (You can inspect the class on the generated `<pre><code class="php"> … </code></pre>` codeblock to see how it was interpreted.)
 If the autodetection didn't work out correctly or you just want control over the rendering, just wrap the code in a manual codeblock and add the language to the code class.
-See for more information the [Highlight.js documentation](http://softwaremaniacs.org/soft/highlight/en/description).
+See for more information the [Highlight.js documentation](http://highlightjs.readthedocs.org/en/latest/).
 
 
 # Disclaimer
